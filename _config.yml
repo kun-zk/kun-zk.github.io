@@ -5,7 +5,7 @@
 # Site
 title: 理想乡.
 subtitle: 'Avalon.'
-description: '代码是语言，你则是诗人'
+description: '自是人生长恨水长东'
 keywords:
 author: Sakaki
 language: zh-CN
@@ -113,3 +113,14 @@ symbols_count_time:
   total_symbols: true          # 站点总字数统计
   total_time: true             # 站点总阅读时长
   exclude_codeblock: false     # 排除代码字数统计
+
+# 启用分类和标签功能
+categories: true
+tags: true
+
+# 全局搜索
+search:
+path: search.xml
+field: post
+format: html
+limit: 10000
