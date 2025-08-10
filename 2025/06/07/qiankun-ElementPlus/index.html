@@ -26,12 +26,14 @@
 <meta property="og:site_name" content="理想乡.">
 <meta property="og:description" content="问题描述：在子应用中使用的ElMessage、ElSelect的下拉框失效 需求新增基座，子应用为老项目做微前端改造，想着不希望基座对子应用产生样式影响，开始遂采用strictStyleIsolation严格隔离。 项目改造完成启动后发现子应用中message与select选项无法弹出。随后想到ElementPlus对弹出类组件设计了统一容器，message与下拉列表为动态挂载。 触发后会被动态挂">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/qiankun-ElementPlus/shadow-root.png">
 <meta property="article:published_time" content="2025-06-07T07:59:22.000Z">
-<meta property="article:modified_time" content="2025-08-10T02:53:00.767Z">
+<meta property="article:modified_time" content="2025-08-10T03:13:25.077Z">
 <meta property="article:author" content="Sakaki">
 <meta property="article:tag" content="qiankun">
 <meta property="article:tag" content="微前端">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/qiankun-ElementPlus/shadow-root.png">
 
 
 <link rel="canonical" href="http://example.com/2025/06/07/qiankun-ElementPlus/">
@@ -286,6 +288,7 @@
     
     
     <div class="post-body" itemprop="articleBody"><h4 id="问题描述：在子应用中使用的ElMessage、ElSelect的下拉框失效"><a href="#问题描述：在子应用中使用的ElMessage、ElSelect的下拉框失效" class="headerlink" title="问题描述：在子应用中使用的ElMessage、ElSelect的下拉框失效"></a>问题描述：在子应用中使用的ElMessage、ElSelect的下拉框失效</h4><p>需求新增基座，子应用为老项目做微前端改造，想着不希望基座对子应用产生样式影响，开始遂采用<code>strictStyleIsolation</code>严格隔离。<br>项目改造完成启动后发现子应用中message与select选项无法弹出。随后想到ElementPlus对<code>弹出类组件</code>设计了统一容器，message与下拉列表为<code>动态挂载</code>。<br>触发后会被动态挂载到<code>layout</code>同层级的<code>el-popper-container-xxxx（）</code>内。在严格隔离状态下，沙箱会导致dom在append时找不到子应用render时的容器。</p>
+<p><img src="/qiankun-ElementPlus/shadow-root.png"></p>
 
     </div>
 
